@@ -48,7 +48,7 @@ def create_rfm_df(df):
     rfm_df["Monetary"] = rfm_df["cnt"]
     rfm_df["Frequency"] = rfm_df["registered"]
     return rfm_df
-all_df = pd.read_csv("all_data (2).csv")
+all_df = pd.read_csv("dashboard/all_data (2).csv")
 
 datetime_columns = ["dteday"]
 all_df.sort_values(by="dteday", inplace=True)
