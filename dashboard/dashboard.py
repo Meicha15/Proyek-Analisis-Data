@@ -49,7 +49,7 @@ def create_day_df(df):
     })
     day_df = day_df.reset_index()
     return day_df
-all_df = pd.read_csv("all_data (2).csv")
+all_df = pd.read_csv("dashboard/all_data (2).csv")
 
 datetime_columns = ["dteday"]
 all_df.sort_values(by="dteday", inplace=True)
@@ -63,7 +63,7 @@ max_date = all_df["dteday"].max()
 with st.sidebar:
     # Menambahkan logo perusahaan
     st.header("Penyewaan Sepeda MS")
-    st.image("logo.png", width=200)
+    st.image("dashboard/logo.png", width=200)
     st.subheader("Hallo,selamat datang di penyewaan sepeda MS!!")
     
     # Mengambil start_date & end_date dari date_input
