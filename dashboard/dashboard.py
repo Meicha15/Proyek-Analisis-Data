@@ -143,6 +143,7 @@ ax[1].tick_params(axis='y', labelsize=12)
 plt.suptitle("Hari dengan Penggunaan Sepeda Terbanyak dan Tersedikit", fontsize=20)
 st.pyplot(fig1)
 
+st.subheader("Pengaruh Kondisi Cuaca Terhadap Jumlah Penyewaan Sepeda")
 fig2, ax = plt.subplots(nrows=1, ncols=2, figsize=(24, 6))
 colors = ["#72BCD4", "#D3D3D3", "#D5D5D5", "#D3D3D3"]
 sns.barplot(x=day_melted_df.index, y=day_melted_df['cnt'], palette=colors, ax=ax[0])
