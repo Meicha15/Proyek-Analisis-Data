@@ -48,7 +48,7 @@ def create_monthly_usage(df):
     "cnt": "sum"})
     return monthly_usage
 
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 
 datetime_columns = ["dteday"]
 all_df.sort_values(by="dteday", inplace=True)
@@ -62,7 +62,7 @@ max_date = all_df["dteday"].max()
 with st.sidebar:
     # Menambahkan logo perusahaan
     st.header("Penyewaan Sepeda MS")
-    st.image("logo.png", width=200)
+    st.image("dashboard/logo.png", width=200)
     st.subheader("Hallo,selamat datang di penyewaan sepeda MS!!")
     
     # Mengambil start_date & end_date dari date_input
